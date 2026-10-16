@@ -50,7 +50,7 @@ def desenhar_raycast():
             if bloco.collidepoint(end_pos):
                 break
 
-            print(((ray_length*720)/depth)/8)
+            #print(((ray_length*720)/depth)/8)
         #if depth < ray_length-20:
         retangulo.height = ((ray_length*720)/depth)/8
         color = max(0,min(210,((ray_length*255)/depth)/8))
