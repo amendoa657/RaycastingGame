@@ -95,6 +95,9 @@ def desenhar_raycast():
 
 def input():
     global rotate
+    coluna = int(playerRect.x // tamanhoBloco)
+    linha = int(playerRect.y // tamanhoBloco)
+
     pos = playerRect.center
     keys = pygame.key.get_pressed()
     if keys[pygame.K_w]:
